@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/">Resto</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarTogglerDemo02"
+    aria-controls="navbarTogglerDemo02"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/list_rest"
+          routerLinkActive="myCustom active "
+          >List Resturants</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/add_rest"
+          routerLinkActive="myCustom active"
+          >Add Resturants</a
+        >
+      </li>
+      <!-- <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/update_rest"
+          routerLinkActive="myCustom active"
+          >Update Resturants</a
+        >
+      </li> -->
+    </ul>
+
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/resgiter"
+          routerLinkActive="myCustom active"
+          ><i class="fa fa-user-edit"></i>&nbsp;Register</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/login"
+          routerLinkActive="myCustom active"
+          ><i class="fa fa-user"></i>&nbsp;Login</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,52 @@
+<h2 class="alert alert-dark font-weight-bolder text-center text-capitalize">
+  Add Resturant.
+</h2>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div *ngIf="showAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+      <strong>Added!</strong> Resturant added Successfully.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <form
+      [formGroup]="addRestForm"
+      (ngSubmit)="handleSubmitt()"
+    >
+      <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Enter name"
+          name="name"
+          formControlName="name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Address</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter address"
+          name="address"
+          formControlName="address"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Enter Email"
+          email
+          name="email"
+          formControlName="email"
+        />
+      </div>
+      <button type="submit" [disabled]="addRestForm.invalid" class="btn btn-outline-dark">Submit</button>
+    </form>
+  </div>
+  <div class="col-md-2"></div>
+</div>

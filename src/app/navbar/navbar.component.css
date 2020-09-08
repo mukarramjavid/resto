@@ -1,0 +1,17 @@
+.myCustom{
+    font-weight: bolder;
+}
+.navbar-brand{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 800 !important ;
+}
+.text-light:hover{
+    color:#f8f9fa !important;
+}
+.fa{
+    color: #f8f9fa !important;
+}
+.navbar-toggler{
+    border-radius: 2rem !important;
+    border-color: rgb(219, 218, 218) !important;
+}

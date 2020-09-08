@@ -1,0 +1,13 @@
+.fa-times-circle {
+  color: red;
+}
+.fa-times-circle:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 503px) {
+  .table_responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
